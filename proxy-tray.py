@@ -33,6 +33,7 @@ import appindicator
 import os
 import sys
 import subprocess
+import time
 import atexit
 
 # File used as SSH master controller
@@ -61,7 +62,9 @@ def enable_response(w, buf):
     if ind.get_status() == appindicator.STATUS_ACTIVE:
 
 	# Open SSH master connection with a control socket in /tmp
-        ssh_process = subprocess.Popen(['ssh', '-D', '8080', '-M', '-S', control_master, '-f', '-C', '-q', '-N', user_at_host])
+        ssh_process = subprocess.Popen(['ssh', '-oPasswordAuthentication=no', '-oBatchMode=yes', '-D', '8080', '-M', '-S', control_master, '-f', '-C', '-q', '-N', user_at_host])
+
+	time.sleep(2) # Time to connect
 
 	if os.path.exists(control_master):
           
