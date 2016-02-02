@@ -1,6 +1,6 @@
 # Proxy Tray
 
-##### An indicator app to quickly switch to an SSH SOCKS proxy
+##### An indicator applet to quickly switch to an SSH SOCKS proxy
 
 This script provides a tray icon to quickly open a SOCKS proxy with SSH through a 
 specific host and set the system-wide proxy settings to use it. This is useful if
