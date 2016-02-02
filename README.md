@@ -5,7 +5,7 @@
 This script provides a tray icon to quickly open a SOCKS proxy with SSH through a 
 specific host and set the system-wide proxy settings to use it. This is useful if
 you use an SSH jump host and sometime need to quickly proxy through (e.g. to access 
-internal intranet resources). This app will only affect connections from applications
+internal intranet resources). This applet will only affect connections from applications
 that use the GNOME system proxy settings.
 
 ## Usage
@@ -24,7 +24,7 @@ Alternatively, you can set the user_at_host value directly in proxy-tray.py
           
 ## Credits and Licensing
 
-The app itself is based on the Python tutorial here:
+The applet itself is based on the Python tutorial here:
 https://wiki.ubuntu.com/DesktopExperienceTeam/ApplicationIndicators
 
 The project is licensed under the GNU General Public Licenses version 3. Please see the
