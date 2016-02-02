@@ -1,6 +1,6 @@
 # Proxy Tray
 
-## An indicator to quickly switch to SSH-based SOCKS proxy
+### An indicator app to quickly switch to an SSH SOCKS proxy
 
 This is a little app I made to quickly open and enable a SOCKS proxy with SSH
 to a specified host and set the system-wide proxy settings to use this proxy.
